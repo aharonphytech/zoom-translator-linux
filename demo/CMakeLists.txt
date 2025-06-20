@@ -73,9 +73,9 @@ target_link_libraries(meetingSDKDemo pthread)
 
 
 # Create a symbolic link
-execute_process(COMMAND ln -s libmeetingsdk.so libmeetingsdk.so.1
-    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/lib/zoom_meeting_sdk
-)
+# execute_process(COMMAND ln -s libmeetingsdk.so libmeetingsdk.so.1
+#     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/lib/zoom_meeting_sdk
+# )
 
 configure_file(${CMAKE_SOURCE_DIR}/config.txt ${CMAKE_SOURCE_DIR}/bin/config.txt COPYONLY)
 
